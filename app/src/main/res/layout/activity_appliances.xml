@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppliancesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/llMobileAppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Mobile"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/phone"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMobileAppl_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/phone"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_weight="6.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total of all inputs"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvMobileTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Total of L x H"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvMobileTotal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/llTvAppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Television"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/tv"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTvAppl_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/tv"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_weight="6.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total of inputs"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvTvTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Total of L x H"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvTvTotal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/llLightsAppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Lights"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_bulb"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLightsAppl_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_bulb"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_weight="6.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total of inputs"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvLightsTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Total of L x H"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvLightsTotal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/llComputerAppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Computer"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mac"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llComputerAppl_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mac"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_weight="6.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total of inputs"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvComputerTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Total of L x H"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvComputerTotal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/llRadioAppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Radio"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/radio"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRadioAppl_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/radio"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_weight="6.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total of inputs"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvRadioTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Total of L x H"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvRadioTotal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/llFridgeAppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Refrigerator"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/fridge"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFridgeAppl_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/fridge"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <LinearLayout
+                        android:layout_weight="6.5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total of inputs"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvFridgeTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Total of L x H"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvFridgeTotal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Total"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+               android:id="@+id/btnCalculate"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/colorAccent"
+               android:text="CALCULATE"
+               android:textColor="@android:color/white"
+               android:textSize="20sp"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
